@@ -88,5 +88,5 @@ EXPOSE 8073
 EXPOSE 8051
 
 RUN poetry cache clear PyPI --all && poetry cache clear _default_cache --all
-#CMD [ "export PATH=$HOME/.local/bin:$PATH >> $HOME/.bashrc && . $HOME/.bashrc"]
+CMD [ "cd /home/${user}/LLama2_run && git pull origin master"]
 #ENTRYPOINT [ "/bin/bash" , "/home/YiVal_test/.profile"]
